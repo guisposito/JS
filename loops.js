@@ -16,12 +16,21 @@ const podeComprar = idadecomprador >= 18 || estaAcompanhada == true ;
 let contador = 0;
 let destinoExiste = false;
 
+//Loop while
 while(contador < 4){
-     
     if (cidades[contador] == destino) {
         console.log("Destino existente: " + cidades[contador])
         destinoExiste = true;
         break;
     }
     contador++;
+}
+
+//Loop com o for
+for (let cont = 0; cont < 4; cont++) {
+    if (cidades[cont] == destino) {
+        console.log("Destino existente: " + cidades[cont])
+        destinoExiste = true;
+        break;
+    }
 }
